@@ -206,6 +206,10 @@ footer a {
   text-decoration: underline;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -226,5 +230,16 @@ footer a {
   .grid-2-columns {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+
+  .card-body embed {
+    aspect-ratio: 16/9;
   }
 }
